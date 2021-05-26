@@ -22,6 +22,10 @@ public class HelloController {
 	public String hello() {
 		return "Hello from Hello controller"+welcomeMessage;
 	}
+	@RequestMapping("/dream")
+	public String dream() {
+		return "dream from dream controller"+welcomeMessage;
+	}
 	
 	@Autowired
 	CredentialsConfiguration credentialsconfiguration;
